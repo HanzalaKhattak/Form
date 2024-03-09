@@ -5,16 +5,76 @@
     box-sizing: border-box;
 }
 
-.body{
-    background-color: rgb(235, 14, 228);
+.form{
     display: flex;
     justify-content: center;
     align-items: center;
     background-position: center; 
     background-size: cover;                                               
-    min-height: 70vh;      
+    min-height: 70vh; 
+    height: 600px;   
 }
 
-.form{
-    size: 420px 408px;
+.event {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.company {
+    margin-left: 37px;
+}
+.company input{
+    margin-left: 15px;
+}
+
+.email {
+    margin-left: 37px;
+}
+.email input{
+    margin-left: 37px;
+}
+
+.phone {
+    margin-left: 37px;
+}
+
+.phone select {
+    margin-left: 14px;
+}
+
+.phone input {
+    margin-left: 53px;
+}
+
+.subjects {
+    margin-left: 37px;
+}
+
+.subjects select {
+    margin-left: 20px;
+    width: 320px
+}
+
+.student {
+    margin-left: 37px;
+}
+
+.radio {
+    margin-left: 37px;
+}
+
+.registerbutton {
+    margin-left: 37px;
 }

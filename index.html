@@ -9,48 +9,46 @@
 </head>
 <body class="body">
     <div class="form">
-        <form action="">
-            <h1>EVENT REGISTERATIPN FORM</h1>
+        <form>
+            <h1 class="event">EVENT REGISTERATIPN FORM</h1>
             <br><br>                        
-            <p>Name:</p>
-
-            <div>
-                <input type="text" name="username"  size="15" maxlength="16" required>
-                <p>First Name</p>
+            <div class="name">
+                <label for="name">Name :</label>
+                <input type="text" name="username" placeholder="First Name" size="15" maxlength="16" required>
+                <input type="text" name="username" placeholder="Last Name"  size="16" maxlength="16" required>
             </div>
-
-            <div>
-                <input type="text" name="username" size="16" maxlength="16" required>
-                <p>Last Name</p>
+            <br>
+            <div class="company">
+                <label for="company">Company :</label>
+                <input  type="text" name="username" placeholder="Your Company Name" size="41" maxlength="50" required>
             </div>
-
-            <p>Company:</p>
-            <div>
-                <input type="text" name="username" size="32" maxlength="50" required>
-                <p>Company Name</p>
+            <br>
+            <div class="email">
+                <label for="E-Mail">E-Mail :</label>
+                <input type="text" placeholder="your-email@gmail.com" size="41" required>
             </div>
-
-            <p>Email:</p>
-            <div>
-                <input type="text" placeholder="your-email@gmail.com" size="32" required>
-            </div>
-            
-            <p>Phone:</p>
-            <div>
-                <select name="country codes">
-                    <option value="country codes" selected="selected">Country Codes</option>
-                    <option value="+81">+81</option>
-                    <option value="+91">+91</option>
-                    <option value="+92">+92</option>
-                    <option value="+94">+94</option>
+            <br>
+            <div class="phone">
+                <label for="phone">Phone no :</label>
+                <select name="Phone" id="Code" required="required">
+                    <option value="Area code">Area Code</option>
+                    <option value="Pakistan">+92</option>
+                    <option value="Afghanistan">+93</option>
+                    <option value="Idia">+91</option>
+                    <option value="Ameraica">+1</option>
+                    <option value="Austrialia">+61</option>
+                    <option value="Bangladish">+880</option>
+                    <option value="Palestine">+970</option>
+                    <option value="China">+86</option>
+                    <option value="Russia">+7</option>
+                    <option value="Iraq">+964</option>
                 </select>
+                <input type="text" placeholder="Phone Number " id="text" required="required" maxlength="10">
             </div>
-            <div>
-                <input type="text" placeholder="Phone Number" size="32" required>
-            </div>
-            <p>Subject:</p>
-            <div>
-                <select name="Choose Options" >
+            <br>
+            <div class="subjects">
+                <label for="Subjects">Subjects :</label>
+                <select name="Choose Options">
                     <option value="Choose Options" selected="selected">Choose Options</option>
                     <option value="BSCS">BSCS</option>
                     <option value="BS-Botany">BS-Botany</option>
@@ -58,13 +56,15 @@
                     <option value="BS-Public Health">BS-Public Health</option>
                 </select>
             </div>
-            <br><br>
-            <p>Are you an Existing Student?
-                <br><br>
+            <br>
+            <p class="student">Are you an Existing Student?</p>
+                <br>
+            <div class="radio">
                 <input type="radio" name="choice" value="yes" checked>Yes
                 <input type="radio" name="choice" value="no">No
-            </p>
-        </form>
+            </div>
+            <br>
+            <button class="registerbutton">Register</button>
         </form>
     </div>
 </body>
